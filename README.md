@@ -1,31 +1,31 @@
 # 📦 SmartStock
 
-> Sistema inteligente de gestión de inventarios desarrollado con **Java 21**, **Spring Boot 3.5** y **PostgreSQL**.
+> A modern inventory management system built with **Java 21**, **Spring Boot 3.5**, and **PostgreSQL**.
 
-SmartStock es una aplicación backend diseñada para pequeñas y medianas empresas que necesitan administrar su inventario de forma eficiente. El proyecto sigue una arquitectura por capas, principios SOLID y buenas prácticas de desarrollo para ofrecer un código limpio, escalable y mantenible.
+SmartStock is a backend application designed for small and medium-sized businesses to efficiently manage inventory, suppliers, purchases, sales, and stock movements. The project follows a layered architecture, SOLID principles, and Clean Code practices to ensure scalability, maintainability, and high code quality.
 
 ---
 
-## 🚀 Tecnologías
+# 🚀 Tech Stack
 
-| Tecnología | Versión |
+| Technology | Version |
 |------------|----------|
 | Java | 21 |
 | Spring Boot | 3.5 |
 | Maven | 3.x |
 | PostgreSQL | 17+ |
-| Spring Data JPA | ✔ |
-| Hibernate | ✔ |
-| Lombok | ✔ |
-| Bean Validation | ✔ |
-| Git | ✔ |
-| GitHub | ✔ |
+| Spring Data JPA | ✓ |
+| Hibernate | ✓ |
+| Lombok | ✓ |
+| Bean Validation | ✓ |
+| Git | ✓ |
+| GitHub | ✓ |
 
 ---
 
-## 📂 Arquitectura
+# 🏗 Architecture
 
-El proyecto sigue una arquitectura por capas para facilitar el mantenimiento y la escalabilidad.
+The project follows a layered architecture to improve maintainability and scalability.
 
 ```text
 src/main/java/com/smartstock
@@ -46,7 +46,7 @@ src/main/java/com/smartstock
 └── util
 ```
 
-Cada módulo contiene:
+Each business module contains:
 
 ```text
 controller/
@@ -60,91 +60,113 @@ service/
 
 ---
 
-# ✨ Características
+# ✨ Features
 
-## 👤 Usuarios
+## 👤 User Management
 
-- Registro
-- Inicio de sesión
-- Roles
-- Administración de usuarios
+- User registration
+- Authentication
+- Role-based access
+- User administration
 
-## 📦 Productos
+### Roles
 
-- CRUD de productos
-- Código de barras
-- Stock mínimo
-- Precio de compra
-- Precio de venta
-- Categorías
-- Proveedores
-
-## 🏷 Categorías
-
-- Crear
-- Editar
-- Eliminar
-- Consultar
-
-## 🚚 Proveedores
-
-- CRUD completo
-
-## 📈 Inventario
-
-- Entradas
-- Salidas
-- Historial
-- Movimientos
-
-## 🛒 Compras
-
-- Registro de compras
-- Actualización automática del stock
-
-## 💰 Ventas
-
-- Registro de ventas
-- Descuento automático del inventario
-
-## 📊 Dashboard
-
-- Total de productos
-- Productos con bajo stock
-- Ventas del día
-- Compras del mes
-- Productos más vendidos
-
-## 📑 Reportes
-
-- Inventario
-- Compras
-- Ventas
-- Productos agotados
+- Administrator
+- Employee
 
 ---
 
-# 🛠 Instalación
+## 📦 Product Management
 
-## Clonar el repositorio
+- Product CRUD
+- Barcode support
+- Purchase price
+- Selling price
+- Current stock
+- Minimum stock
+- Category assignment
+- Supplier assignment
+
+---
+
+## 🏷 Category Management
+
+- Create categories
+- Update categories
+- Delete categories
+- Retrieve categories
+
+---
+
+## 🚚 Supplier Management
+
+- Complete CRUD operations
+
+---
+
+## 📊 Inventory Management
+
+- Stock entries
+- Stock exits
+- Inventory movements
+- Movement history
+
+---
+
+## 🛒 Purchase Management
+
+- Register purchases
+- Automatic stock updates
+
+---
+
+## 💰 Sales Management
+
+- Register sales
+- Automatic stock deduction
+
+---
+
+## 📈 Dashboard
+
+- Total products
+- Low stock alerts
+- Daily sales
+- Monthly purchases
+- Best-selling products
+
+---
+
+## 📄 Reports
+
+- Inventory reports
+- Purchase reports
+- Sales reports
+- Out-of-stock products
+
+---
+
+# 🛠 Installation
+
+## Clone the repository
 
 ```bash
 git clone https://github.com/LauraDaheq/SmartStock.git
 ```
 
-Entrar al proyecto
+Enter the project directory
 
 ```bash
 cd SmartStock
 ```
 
-Compilar
+Build the project
 
 ```bash
 mvn clean install
 ```
 
-Ejecutar
+Run the application
 
 ```bash
 mvn spring-boot:run
@@ -152,13 +174,13 @@ mvn spring-boot:run
 
 ---
 
-# 🗄 Base de datos
+# 🗄 Database
 
-Motor:
+Database Engine
 
 - PostgreSQL
 
-Base de datos:
+Database Name
 
 ```text
 smartstock
@@ -166,77 +188,93 @@ smartstock
 
 ---
 
-# 📌 Estado del proyecto
+# 📌 Project Status
 
-Actualmente se encuentra en desarrollo.
+🚧 **Currently under active development**
 
-### ✔ Completado
+## ✅ Completed
 
-- Arquitectura base
-- Configuración de Maven
-- Spring Boot
-- PostgreSQL
-- Estructura modular
-- Configuración inicial
+- Spring Boot project setup
+- Maven configuration
+- Java 21 configuration
+- PostgreSQL integration
+- Modular project structure
+- Initial backend architecture
 
-### 🚧 En desarrollo
+## 🚧 In Progress
 
-- Módulo User
-- Autenticación
-- Categorías
-- Productos
-- Inventario
-- Compras
-- Ventas
+- User module
+- Authentication
+- Categories
+- Products
+- Inventory
 
-### 📅 Próximamente
+## 📅 Planned
 
-- Spring Security
-- JWT
-- Swagger/OpenAPI
+- Purchase module
+- Sales module
 - Dashboard
-- Reportes
-- Docker
-- Pruebas unitarias
-- CI/CD
+- Reports
+- Spring Security
+- JWT Authentication
+- Swagger / OpenAPI
+- Docker support
+- Unit & Integration Tests
+- CI/CD Pipeline
 
 ---
 
-# 📋 Roadmap
+# 📍 Roadmap
 
-- [x] Configuración del proyecto
-- [x] Maven
-- [x] Spring Boot
-- [x] PostgreSQL
-- [ ] Usuarios
-- [ ] Categorías
-- [ ] Proveedores
-- [ ] Productos
-- [ ] Inventario
-- [ ] Compras
-- [ ] Ventas
+- [x] Project setup
+- [x] Spring Boot configuration
+- [x] Maven configuration
+- [x] PostgreSQL configuration
+- [ ] User Management
+- [ ] Authentication
+- [ ] Category Management
+- [ ] Supplier Management
+- [ ] Product Management
+- [ ] Inventory Management
+- [ ] Purchase Module
+- [ ] Sales Module
 - [ ] Dashboard
-- [ ] Reportes
+- [ ] Reports
 - [ ] Spring Security
-- [ ] JWT
-- [ ] Swagger
+- [ ] JWT Authentication
+- [ ] Swagger / OpenAPI
 - [ ] Docker
-- [ ] Tests
+- [ ] Unit Testing
+- [ ] Integration Testing
 - [ ] CI/CD
 
 ---
 
-# 🎯 Objetivos del proyecto
+# 🎯 Project Goals
 
-- Aplicar arquitectura por capas.
-- Implementar principios SOLID.
-- Seguir buenas prácticas de Clean Code.
-- Construir una API REST profesional.
-- Desarrollar un proyecto de portafolio con estándares de la industria.
+- Develop a scalable RESTful API.
+- Apply Layered Architecture principles.
+- Follow SOLID principles.
+- Write clean and maintainable code.
+- Build a production-ready backend application.
+- Showcase backend development best practices.
 
 ---
 
-# 👩‍💻 Autora
+# 📖 Future Improvements
+
+- Docker Compose deployment
+- Flyway database migrations
+- Redis caching
+- Email notifications
+- Audit logging
+- API versioning
+- Monitoring with Spring Boot Actuator
+- Performance optimization
+
+---
+
+# 👩‍💻 Author
 
 **Laura Hernández**
 
@@ -244,12 +282,12 @@ Electronic Engineer
 
 Universidad Nacional de Colombia
 
-GitHub:
+GitHub
 
-https://github.com/LauraDaheq
+**https://github.com/LauraDaheq**
 
 ---
 
-# ⭐ Si este proyecto te resulta interesante
+# ⭐ Support
 
-¡No olvides dejar una estrella en el repositorio!
+If you find this project useful, consider giving it a **Star ⭐** on GitHub.
